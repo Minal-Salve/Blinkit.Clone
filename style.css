@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+.vertical-line{
+    border-left: 2px solid #f2f2f2;
+    height: 75px;
+}
+.nav-delivery > h5{
+    font-weight: 700;
+    margin-top: 20px;
+    line-height: 8px;
+}
+.nav-delivery > p{
+    font-size: 13px;
+    columns:#f2f2f2;
+}
+#nav_search{
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    border: 1px solid #f2f2f2;
+    padding-inline: 10px;
+}
+#nav_search>input{
+    border: none;
+    width: 40vw;
+    height: 50px;
+    background-color: transparent;
+}
+#cart{
+    background-color: #0c831f;
+    color: white;
+    padding-inline: 10px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border-radius: 8px;
+}
+
+.hero-section{
+    display: flex;
+    justify-content: center;
+}
+.hero-section>img{
+    width: 87vw;
+}
+
+.section2{
+    width: 85vw;
+    margin: auto;
+}
+
+.cards{
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+.cards>img{
+    display: inline-block;
+    width: 336px;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+
+
+/* ssection 3 (imgs) */
+
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    width: 88vw;
+    margin-left: 80px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.images>img{
+    width: 120px;
+    height: 189px;
+}
+
+/* section 4 */
+.products{
+    
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
+.products>.product_card{
+    width: 220px;
+    box-sizing: border-box;
+    padding-inline: 15px;
+    border-radius: 10px !important;
+    white-space: nowrap !important;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+    overflow: wrap;
+}
+
+.product_card>img{
+    width: 145px;
+    display: block;
+    margin: auto;
+    position: relative;
+}
+
+.time{
+    background-color: #f2f2f2;
+    font-weight: 700;
+    font-size: 10px;
+    color: rgb(54, 54,54);
+    width: fit-content;
+    padding: 4px;
+    border-radius: 6px;
+    margin-bottom: 3px;
+}
+
+.product_card>h5{
+    color: rgb(31, 31, 31);
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 14px;
+    width: 100%;
+    height: 36px;
+    margin-bottom: 10px;
+}
+
+.weight{
+    color: #666666;
+    font-size: 12px;
+}
+
+.price > p{
+    margin-top: 15px !important;
+}
+
+.my_btn{
+    font-size: 13px !important; 
+    background-color: #F7FFF9 !important;
+    width: 70px !important;
+    color: #318616 !important;
+    border-color:#318616 !important ;
+}
+
+/* footer */
+
+.row_1{
+    display: flex;
+    margin-top: 50px;
+}
+
+table{
+    width: 100%;
+}
+.row_1_table_1{
+    flex: 2;
+}
+.row_1_table_2{
+    flex: 3;
+}
+td{
+    color: #666666;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+
+
+
+.row_2{
+    font-size: 12px;
+    text-align: justify;
+    color: #666666;
+    background-color: #fcfcfc;
+    padding: 16px 0;
+}
+
+.row_2_col_2{
+    display:flex ;
+    align-items: center;
+}
+.footer_button{
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 18px;
+    background-color: #213a50;
+    margin-inline: 5px;
+}
+.row_2_col_2>h6{
+    font-weight: 600;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.app_icons{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    font-size: 30px ;
+}
+
+.row_2_col_1{
+    flex: 1.3;
+}
+.row_2_col_2{
+    flex: 1.3;
+    margin-left: 10px;
+}
+.row_2_col_3{
+    flex: 1;
+}
+
+.row_3{
+    font-size: 15px;
+    text-align: justify;
+    color: #666666;
+}
+
+.my_div{
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    background-color: #e8e2e2;
+}
+
+@media screen and (max-width:480px){
+    nav, .row_1 , .row_2,.row_1_table_1 , .row_1_table_2, .row_2_col_2{
+    display: flex;
+    flex-direction: column !important;
+    align-items: center !important;
+    margin-top: 20px;
+   } 
+
+   nav{
+    a,.vertical-line,.my_login,#cart{
+        display: none;
+    }
+   
+   }
+
+   .images{
+    margin-left: 0px;
+    display: flex;
+    margin: auto;
+   }
+
+   .footer_button{
+    margin-top: 10px;
+    margin-bottom: 15px;
+   }
+
+    
+}
